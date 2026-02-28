@@ -1,14 +1,20 @@
 import React, { useState, useEffect } from 'react'
-
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import HomePage from './pages/HomePage.jsx';
 
 function App() {
 
 
   return (
-    <>
-    <h1>Hello World</h1>
-    <h2>Testing deployment</h2>
-    </>
+    <Container>
+      <Routes>
+        <Route 
+          path="/"
+          element={<HomePage />}
+        />
+      </Routes>
+    </Container>
   )
 }
 
