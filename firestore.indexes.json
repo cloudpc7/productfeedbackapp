@@ -1,4 +1,33 @@
 {
-  "indexes": [],
+  "indexes": [
+    {
+    "collectionGroup": "productRequests",
+    "queryScope": "COLLECTION",
+    "fields": [
+      { "fieldPath": "category", "order": "ASCENDING"},
+      { "fieldPath": "upvotes", "order": "Descending"}
+
+    ]
+  }, 
+  {
+    "collectionGroup": "productRequests",
+    "queryScope": "COLLECTION",
+    "fields": [
+      { "fieldPath": "status", "order": "ASCENDING"},
+      { "fieldPath": "upvotes", "order": "Descending"}
+
+    ]
+  },
+  {
+      "collectionGroup": "productRequests",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "category", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "upvotes", "order": "DESCENDING" }
+      ]
+    }
+
+],
   "fieldOverrides": []
 }
